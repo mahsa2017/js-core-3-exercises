@@ -1,5 +1,5 @@
 function equals(got, expected) {
-  if(got === expected) {
+  if (got === expected) {
     console.log("✔︎ Passed");
     console.log();
   } else {
@@ -11,7 +11,7 @@ function equals(got, expected) {
 }
 
 var haystack1 = ['pony', 'water', 'keyboard', 'needle', 'cactus'];
-var haystack2 = ['glass', 'needle', ]
+var haystack2 = ['glass', 'needle',]
 
 /*
 Instructions:
@@ -19,9 +19,14 @@ Instructions:
 Turn the below "find needle" code into a function
 that returns the index of "needle" in the given haystack
 */
+function findNeedle(myArr) {
+  for (var i = 0; i < myArr.length; i++) {
+    if (myArr[i] === "needle") {
+      return i;
+    };
+  };
+};
+equals(findNeedle(haystack1), 3);
+equals(findNeedle(haystack2), 1);
+equals(findNeedle(haystack1), 5);
 
-for(var i = 0; i < haystack1.length; i++) {
-  if(haystack1[i] === "needle") {
-    console.log("Found needle at position " + i);
-  }
-}
