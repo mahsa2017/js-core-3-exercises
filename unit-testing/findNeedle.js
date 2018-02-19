@@ -34,7 +34,7 @@ that returns the index of "needle" in the given haystack
 } */
 
 //using map
-/* function findNeedle(haystack) {
+ function findNeedle(haystack) {
   var found = 0;
   haystack.map((item, index) => {
     if (item === 'needle') {
@@ -42,7 +42,7 @@ that returns the index of "needle" in the given haystack
     }
   })
   return found;
-} */
+} 
 
 //using filter and indexOf
 function findNeedle(haystack) {
