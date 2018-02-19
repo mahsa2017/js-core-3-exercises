@@ -20,7 +20,6 @@ sure it works!
 */
 
 function sum(a, b) {
-  var result = a + b;
   return a + b
   // console.log("The sum is " + result);
 }
