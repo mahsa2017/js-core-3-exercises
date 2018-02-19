@@ -24,3 +24,5 @@ function sum(a, b) {
   return a + b
   // console.log("The sum is " + result);
 }
+equals(sum(3, 5), 8);
+equals(sum(3, 5), "8");
