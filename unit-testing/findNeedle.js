@@ -19,13 +19,35 @@ Instructions:
 Turn the below "find needle" code into a function
 that returns the index of "needle" in the given haystack
 */
-function findNeedle(myArr) {
+/* function findNeedle(myArr) {
+  myArr.filter(function(i){return i})
   for (var i = 0; i < myArr.length; i++) {
     if (myArr[i] === "needle") {
       return i;
     };
   };
-};
+}; */
+
+//using map and findIndex
+/* function findNeedle(haystack) {
+  return haystack.map((a)=>a+="").findIndex((a)=>a=="needle");
+} */
+//using map
+/* function findNeedle(haystack) {
+  let found = 0;
+  haystack.map((item, index) => {
+    if (item === 'needle') {
+      found = index;
+    }
+  })
+  return found;
+} */
+//using filter
+function findNeedle(haystack) {
+  haystack.filter(arr => arr === 'needle' )
+  return haystack.indexOf('needle');
+}
+
 equals(findNeedle(haystack1), 3);
 equals(findNeedle(haystack2), 1);
 equals(findNeedle(haystack1), 5);
